@@ -1,0 +1,21 @@
+version: "3.8"
+
+x-backend: &backend
+  stdin_open: true
+  tty: true
+  volumes:
+    - .:/app:cached
+    - bundle:/usr/local/bundle
+  environment:
+    RACK_ENV: ${RACK_ENV:-development}
+    API_TWITTER_KEY: field_this_key
+    API_FACEBOOK_KEY: field_this_key
+
+services:
+  runner:
+    <<: *backend
+    build: .
+    command: /bin/zsh
+
+volumes:
+  bundle:
