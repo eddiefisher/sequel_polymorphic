@@ -16,11 +16,11 @@ Gem::Specification.new do |s|
   s.require_paths = ['lib']
   s.extra_rdoc_files = ['README.md', 'LICENSE', 'CHANGELOG.md']
 
-  s.add_runtime_dependency 'sequel', '>=4.0.0', '<6'
+  s.add_runtime_dependency 'sequel', '>=5.39.0', '<6'
 
-  s.add_development_dependency 'minitest', '~> 5.8'
-  s.add_development_dependency 'minitest-hooks', '~> 1.2'
-  s.add_development_dependency 'sqlite3', '~> 1.3'
-  s.add_development_dependency 'simplecov', '~> 0.10'
-  s.add_development_dependency 'rake', '~> 11.3'
+  s.add_development_dependency 'minitest', '~> 5.14'
+  s.add_development_dependency 'minitest-hooks', '~> 1.5'
+  s.add_development_dependency 'sqlite3', '~> 1.4'
+  s.add_development_dependency 'simplecov', '~> 0.20'
+  s.add_development_dependency 'rake', '~> 13.0'
 end
